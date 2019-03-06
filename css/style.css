@@ -1,0 +1,140 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.main {
+	height: 1000px;
+	width: 100%;
+	background-color: hotpink;
+}
+
+.img1 {
+	height: 300px;
+	width: 300px;
+	float: left;
+	margin: 15px;
+	overflow: hidden;
+}
+
+.second-main {
+	height: 750px;
+	width: 1000px;
+	margin: auto;
+	position: relative;
+	top: 50px;
+}
+
+.img2 {
+	height: 300px;
+	width: 300px;
+	float: left;
+	margin: 15px;
+	overflow: hidden;
+}
+
+.img3 {
+	height: 300px;
+	width: 300px;
+	float: left;
+	margin: 15px;
+}
+
+.img4 {
+	height: 300px;
+	width: 300px;
+	float: left;
+	margin: 80px 15px;
+}
+
+.img5 {
+	height: 300px;
+	width: 300px;
+	float: left;
+	margin: 80px 15px;
+}
+
+.img6 {
+	height: 300px;
+	width: 300px;
+	float: left;
+	margin: 80px 15px;
+}
+
+.second-main img {
+	transition: .3s all;
+}
+
+.second-main img:hover {
+	transform: scale(1.1);
+	transition-duration: .5s;
+}
+
+.third {
+	height: 400px;
+	width: 1000px;
+	margin: auto;
+	position: absolute;
+	top: 300px;
+	background-color: yellow;
+}
+
+.afterbefore {
+	height: 200px;
+	width: 200px;
+	background-color: red;
+	margin: 50px auto;
+	position: relative;
+}
+
+.afterbefore::after {
+	content: "";
+	position: absolute;
+	top: -5%;
+	left: -5%;
+	height: 50%;
+	width: 50%;
+	border-top: 2px solid yellow;
+	border-left: 2px solid yellow;
+	z-index: -1;
+}
+
+.afterbefore:before {
+	content: "";
+}
+
+.one {
+	height: 60px;
+	width: 200px;
+	background-color: blue;
+	margin: 40px auto;
+	position: relative;
+}
+
+.one::after {
+	height: 100%;
+	width: 0px;
+	background-color: #111;
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: '';
+
+}
+
+.one:hover:after {
+	top: 0;
+	right: 0;
+	transition: 1s all;
+	height: 100%;
+	width: 100%;
+	background-color: #111;
+	position: absolute;
+	content: '';
+}
